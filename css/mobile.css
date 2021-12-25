@@ -1,0 +1,42 @@
+#navbar .container {
+    flex-direction: column;
+}
+#navbar .container h1 {
+    padding: 10px 0;
+}
+
+#descrizioni .descrizione .paolo img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .edoardo img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .francesco_f img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .giorgia img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .mario img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .viola img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .francesco_b img {
+    padding-right: 10px;
+}
+
+#descrizioni .descrizione .simone img {
+    padding-right: 10px;
+}
+
+#intestazione .titolo h2 {
+    text-align: justify;
+}
