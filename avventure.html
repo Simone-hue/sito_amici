@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon_3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
+    <title>L Fusa | Avventure</title>
+</head>
+<body>
+    <!-- Torna su -->
+    <a name="inizio"></a>
+    <a href="#inizio">
+        <div id="tornasu">
+            <img src= "img/arrow-up.png" title="freccia su" class="tornasu" width="40px" height="40px">
+        </div>
+    </a>
+
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 id="logo"><a href="home.html">L FUSA</a></h1>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="chi_siamo.html">Chi siamo</a></li>
+                    <li><a href="avventure.html" class="current">Avventure</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Section 1 -->
+    <section id="avventure">
+        <div>
+            <p id="introduzione">
+                È un po' strano da dire ma non abbiamo avventure in qui ci siamo tutti noi, o per lo meno non ne avevamo, le abbiamo appena create, anche se in realtà non è che ci fossimo tutti però la maggior parte di noi era presente. Le avventure di cui sto parlando hanno come location casa di vio e casa di bono. Nella prima location si hanno due avventure, una di cui non vi potrò parlare in quanto non ero presente quindi lascio la parola alla signorina corti, mentre le altre due cercherò di raccontarle nel miglior modo possibile, cercando di non tralasciare nessun dettaglio o per lo meno quelli più belli e interessanti.
+            </p>
+        </div>
+        <div class="indice">
+            <menu>
+                <li><a href="#festa1">Estate 1</a></li>
+                <li><a href="#festa2">Estate 2</a></li>
+                <li><a href="#festa3">Hallowen</a></li>
+                <li><a href="#festa4">Immacolata</a></li>
+                <li><a href="#festa5">Capodanno</a></li>
+            </menu>
+        </div>
+        <div class="avventure" id="casavio1">
+            <a name="festa1"></a>
+            <h2>Festa estiva 2021 parte 1</h2>
+            <p>
+                parola alla collega Corti Giorgia
+            </p>
+        </div>
+        <div class="avventure" id="casavio2">
+            <a name="festa2"></a>
+            <h2>Festa estiva 2021 parte 2</h2>
+            <p>
+                adesso ve la racconto
+            </p>
+        </div>
+        <div class="avventure" id="casabono1">
+            <a name="festa3"></a>
+            <h2>Halloween</h2>
+            <p>
+                adesso ve la racconto
+            </p>
+        </div>
+        <div class="avventure" id="casaari1">
+            <a name="festa4"></a>
+            <h2>Festa dell'immacolata 2021</h2>
+            <p>
+                dovremmo aspettare il 7 per raccontare questa avventura
+            </p>
+        </div>
+        <div class="avventure" id="casavio3">
+            <a name="festa5"></a>
+            <h2>Capodanno 2022</h2>
+            <p>
+                dovremmo aspettare capodanno per raccontare questa avventura
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p>L Fusa &copy; 2019, All rights reserved</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        window.addEventListener ("scroll",function(){
+        if (window.pageYOffset>300) {
+        document.getElementById ("tornasu").style.display= "block";
+        }
+        else if (window.pageYOffset<300) {
+        document.getElementById ("tornasu").style.display= "none";
+        }
+        val[0].innerHTML= "PageYOffset = "+window.pageYOffset
+        },!1);
+    </script>
+</body>
+</html>

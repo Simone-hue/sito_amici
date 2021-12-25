@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/favicon_1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
+    <title>L Fusa | Home</title>
+</head>
+<body>
+    <!-- Torna su -->
+    <a name="inizio"></a>
+    <a href="#inizio">
+        <div id="tornasu">
+            <img src= "img/arrow-up.png" title="freccia su" class="tornasu" width="40px" height="40px">
+        </div>
+    </a>
+
+    <!-- Navbar -->
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 id="logo"><a href="home.html">L FUSA</a></h1>
+                <ul>
+                    <li><a href="home.html" class="current">Home</a></li>
+                    <li><a href="chi_siamo.html">Chi siamo</a></li>
+                    <li><a href="avventure.html">Avventure</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section 1 -->
+    <section>
+        <div class="container">
+            <h2>Un gruppo al quanto strano e diverso dagli altri</h2>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        
+    </section>
+
+    <!-- Section 3 -->
+    <section>
+
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer id="footer">
+        <p>L Fusa &copy; 2019, All rights reserved</p>
+    </footer> -->
+    
+    <!-- Script -->
+    <script>
+        window.addEventListener ("scroll",function(){
+        if (window.pageYOffset>300) {
+        document.getElementById ("tornasu").style.display= "block";
+        }
+        else if (window.pageYOffset<300) {
+        document.getElementById ("tornasu").style.display= "none";
+        }
+        val[0].innerHTML= "PageYOffset = "+window.pageYOffset
+        },!1);
+    </script>
+</body>
+</html>

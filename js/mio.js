@@ -1,0 +1,3 @@
+$( ".outer" ).mouseover(function(start) {
+    
+  });
