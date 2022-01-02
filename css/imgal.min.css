@@ -15,12 +15,12 @@
     border-radius: 20px;
     transition:filter .2s;
 }
-
+/* 
 .imgal-img:hover {
     -webkit-filter:opacity(80%);
     filter:opacity(80%);
     cursor:pointer;
-}
+} */
 
 .imgal-modal {
     margin:auto;

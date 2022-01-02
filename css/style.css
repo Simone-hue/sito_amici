@@ -86,6 +86,118 @@ a {
     text-align: center;
 }
 
+/* home */
+/* titolo */
+#titolo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+#titolo .container h1 {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+#titolo .container sub {
+    width: 100%;
+    text-align: left;
+    padding-left: 535px;
+    color: #fff;
+
+}
+
+#hide1{
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+}
+
+#hide2{
+    -webkit-animation: 4s ease 0s normal forwards 1 fadein;
+    animation: 4s ease 0s normal forwards 1 fadein;
+}
+
+#hide3{
+    -webkit-animation: 5s ease 0s normal forwards 1 fadein;
+    animation: 5s ease 0s normal forwards 1 fadein;
+}
+
+#hide4{
+    -webkit-animation: 6s ease 0s normal forwards 1 fadein;
+    animation: 6s ease 0s normal forwards 1 fadein;
+}
+
+#hide5 {
+    -webkit-animation: 7s ease 0s normal forwards 1 fadein;
+    animation: 7s ease 0s normal forwards 1 fadein;
+}
+
+#hide5 {
+    -webkit-animation: 8s ease 0s normal forwards 1 fadein;
+    animation: 8s ease 0s normal forwards 1 fadein;
+}
+
+#hide6 {
+    -webkit-animation: 9s ease 0s normal forwards 1 fadein;
+    animation: 9s ease 0s normal forwards 1 fadein;
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* 
+#hide{
+    color: #333;
+
+}
+
+#hide:hover{
+    color: #fff;
+} */
+
+.color_p {
+    color: #00ff00;
+}
+
+.color_e {
+    color: #a70000;
+}
+
+.color_f {
+    color: #ffee00;
+}
+
+.color_g {
+    color: #00ffaa;
+}
+
+.color_m {
+    color: #6cceff;
+}
+
+.color_v {
+    color: #800080;
+}
+
+.color_b {
+    color: #0000ff;
+}
+
+.color_s {
+    color: #ffa500;
+}
+
 /* chi siamo */
 /* descizioni */
 
@@ -215,8 +327,12 @@ a {
     border-radius: 5px;
 }
 
+.link_insta:link {
+    color: #ff0000;
+}
+
 .link_insta:hover {
-    color: red;
+    color: #ffffff;
 }
 
 /* avventure */
