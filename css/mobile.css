@@ -1,9 +1,42 @@
+/* navbar */
+
 #navbar .container {
     flex-direction: column;
 }
 #navbar .container h1 {
     padding: 10px 0;
 }
+
+/* home */
+/* titolo */
+
+#titolo .container h1 {
+    font-size: 2.5rem;
+    padding: 1rem 10px;
+}
+
+#titolo .container sub {
+    padding: 1rem 10px;
+}
+
+#hide5 {
+    position: absolute;
+    left: -9999px;
+}
+
+/* story time */
+
+#story_time .container .img_home {
+    width: 100%;
+}
+
+#story_time .container .story_title {
+    width: 100%;
+    padding-top: 25px;
+}
+
+
+/* chi siamo */
 
 #descrizioni .descrizione .paolo img {
     padding-right: 10px;
@@ -37,6 +70,12 @@
     padding-right: 10px;
 }
 
+/* gallery */
+
 #intestazione .titolo h2 {
     text-align: justify;
+}
+
+#img_gallery {
+    padding-left: 10px;
 }
