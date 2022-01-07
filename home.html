@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon/favicon_1.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- css normale -->
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css"> <!-- css per telefoni -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"> <!-- css per libreria gallery -->
+    <link rel="stylesheet" href="css/menu_tendina.css"> <!-- css per menù a tendina -->
     <title>L Fusa | Home</title>
 </head>
 <body>
@@ -21,16 +22,35 @@
 
     <!-- Navbar -->
     <header>
-        <nav id="navbar">
-            <div class="container">
-                <h1 id="logo"><a href="home.html">L FUSA</a></h1>
-                <ul>
-                    <li class="current"><a href="home.html" class="current">Home</a></li>
-                    <li><a href="chi_siamo.html">Chi siamo</a></li>
-                    <li><a href="working_progress.html">Avventure</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                </ul>
-            </div>
+        <input type="checkbox" id="hamburger"/>
+        <label class="menuicon" for="hamburger">
+            <span></span>
+        </label>
+
+        <div id="bar"> 
+            <div id="logo">
+                <h1><a href="home.html">L FUSA</a></h1>
+            </div>   
+        </div> 
+        
+        <nav class="menu-visibility">
+            <ul>
+                <li class="current"><a href="home.html" class="current active a_primary">HOME</a></li>
+                <li><a href="chi_siamo.html" class="submenu a_primary">CHI SIAMO</a>
+                    <ul>
+                        <li><a href="chi_siamo.html#paolo" title="descrizione di Paolo" class="color_p  a_secondary"> Paolo</a></li>
+                        <li><a href="chi_siamo.html#eddy" title="descrizione di Eddy" class="color_e  a_secondary"> Eddy</a></li>
+                        <li><a href="chi_siamo.html#fada" title="descrizione di Fada" class="color_f  a_secondary"> Fada</a></li>
+                        <li><a href="chi_siamo.html#gio" title="descrizione di Gio" class="color_g  a_secondary"> Giorgia</a></li>
+                        <li><a href="chi_siamo.html#mario" title="descrizione di Mario" class="color_m  a_secondary"> Mario</a></li>
+                        <li><a href="chi_siamo.html#vio" title="descrizione di Vio" class="color_v  a_secondary"> Vio</a></li>
+                        <li><a href="chi_siamo.html#bono" title="descrizione di Bono" class="color_b  a_secondary"> Bono</a></li>
+                        <li><a href="chi_siamo.html#simo" title="descrizione di Simo" class="color_s  a_secondary"> Simone</a></li>
+                    </ul>
+                </li>
+                <li><a href="working_progress.html" class="submenu a_primary">AVVENTURE</a></li>
+                <li><a href="gallery.html" class="submenu a_primary">GALLERY</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -39,7 +59,7 @@
         <div class="container">
             <h1><span><a href="chi_siamo.html#paolo" title="descrizione di Paolo" class="color_p">Un</a></span> <span><a href="chi_siamo.html#eddy" title="descrizione di Eddy" class="color_e">gruppo</a></span> <span><a href="chi_siamo.html#fada" title="descrizione di Fada" class="color_f">veramente</a></span> <span><a href="chi_siamo.html#gio" title="descrizione di Gio" class="color_g">strano</a></span> <span><a href="chi_siamo.html#mario" title="descrizione di Mario" class="color_m">e</a></span> <span><a href="chi_siamo.html#vio" title="descrizione di Vio" class="color_v">diverso</a></span> <span><a href="chi_siamo.html#bono" title="descrizione di Bono" class="color_b">dagli</a></span> <span><a href="chi_siamo.html#simo" title="descrizione di Simo" class="color_s">altri</a></span></h1>
             <sub>
-                <span id="hide1">I colori del titolo non sono scelti a caso...</span> <span id="hide2">&rarr;</span> <span id="hide3">&rarr;</span> <span id="hide4">&rarr;</span> <span id="hide5">&rarr;</span> <span id="hide6">Se fossi in te proverei a cliaccarli se vuoi sapare chi siamo.</span>
+                <span id="hide1">I colori del titolo non sono scelti a caso...</span> <span id="hide2">&rarr;</span> <span id="hide3">&rarr;</span> <span id="hide4">&rarr;</span> <span id="hide5">&rarr;</span> <span id="hide6">Se fossi in te proverei a cliccarli se vuoi sapere chi siamo veramente.</span>
             </sub>
         </div>
     </section>
@@ -51,7 +71,13 @@
             <div class=" story_title">
                 <h1>Questa è la storia di come questo gruppo è nato</h1>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem cumque iste voluptas neque minus sapiente explicabo at est temporibus fuga, quibusdam, facilis ullam cupiditate nostrum quia asperiores sed non eligendi! Aperiam nam voluptatibus libero eius maxime doloremque quo architecto aut, pariatur quod aliquid, non alias veritatis, earum neque velit? Architecto at vero cupiditate, mollitia corporis quam placeat facilis. Nemo minima omnis officiis dignissimos. Quas neque quisquam sit voluptatibus vitae laborum nobis, tempore ducimus! Mollitia maiores libero corporis ipsa odit consequuntur ad sed eveniet, officiis, ipsum, ut praesentium? Inventore molestias excepturi sit repellendus et corrupti repudiandae accusamus, assumenda quae, necessitatibus veniam?
+                    Il nostro gruppo nasce con una storia curiosa il 2 dicembre 2019.
+                    <br>
+                    <br>
+                    A crearlo è Mario (avevate dubbi?), in quel periodo infatti si sentiva con una certa...nessuno si ricorda il nome è conosciuta solo come "quella fusa”, infatti diciamo che non brillava di intelligenza. Il gruppo è stato creato per inoltrare gli screen della chat a 4 o 5 di noi, ovviamente il gruppo non poteva avere altro nome se non "la fusa".
+                    <br>
+                    <br>
+                    Piccolo problema: Mario, quando ha creato il gruppo, non era al mc e non aveva il suo bellissimo tabellone delle lettere e una "a" l’ha lasciata per strada così è diventato "L fusa". Piano piano a questi gruppo si sono unite sempre più persone, ma in pochi possono vantarsi di aver letto le chat della fusa.
                 </p>
             </div>
             <div class="both"></div>

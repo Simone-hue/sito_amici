@@ -13,6 +13,7 @@
 #titolo .container h1 {
     font-size: 2.5rem;
     padding: 1rem 10px;
+    text-align: center;
 }
 
 #titolo .container sub {
@@ -34,7 +35,6 @@
     width: 100%;
     padding-top: 25px;
 }
-
 
 /* chi siamo */
 

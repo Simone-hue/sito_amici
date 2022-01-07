@@ -84,6 +84,7 @@ a {
     align-items: center;
     justify-content: center;
     height: 70vh;
+    padding-top: 54px;
     /* background: url(../img/gallery/83.jpg) no-repeat center center/cover; */
 }
 
@@ -179,13 +180,6 @@ a {
 
 /* story time */
 
-.box {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 #story_time .container .img_home {
     background: url(../img/gallery/68.jpg) no-repeat center center/cover;
     height: 500px;
@@ -209,7 +203,7 @@ a {
     padding: 0 1rem;
     text-align: justify;
     font-size: 12pt;
-    
+    line-height: 1.2;
 }
 
 /* chi siamo */
@@ -217,6 +211,7 @@ a {
 
 #descrizioni {
     height: 500px;
+    padding-top: 2rem;
     background: linear-gradient(#e66465, #9198e5);
     /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
