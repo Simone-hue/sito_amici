@@ -26,18 +26,16 @@
         <label class="menuicon" for="hamburger">
             <span></span>
         </label>
-
         <div id="bar"> 
             <div id="logo">
                 <h1><a href="home.html">L FUSA</a></h1>
             </div>   
         </div> 
-        
         <nav class="menu-visibility">
             <ul>
-                <li class="current"><a href="home.html" class="current active a_primary">HOME</a></li>
-                <li><a href="chi_siamo.html" class="submenu a_primary">CHI SIAMO</a>
-                    <ul>
+                <li class="current"><a href="home.html">HOME</a></li>
+                <li id="menuButtonChisiamo"><a href="#" class="submenu">CHI SIAMO</a>
+                    <ul id="menuChisiamo" style="display:none;">
                         <li><a href="chi_siamo.html#paolo" title="descrizione di Paolo" class="color_p  a_secondary"> Paolo</a></li>
                         <li><a href="chi_siamo.html#eddy" title="descrizione di Eddy" class="color_e  a_secondary"> Eddy</a></li>
                         <li><a href="chi_siamo.html#fada" title="descrizione di Fada" class="color_f  a_secondary"> Fada</a></li>
@@ -48,8 +46,12 @@
                         <li><a href="chi_siamo.html#simo" title="descrizione di Simo" class="color_s  a_secondary"> Simone</a></li>
                     </ul>
                 </li>
-                <li><a href="working_progress.html" class="submenu a_primary">AVVENTURE</a></li>
-                <li><a href="gallery.html" class="submenu a_primary">GALLERY</a></li>
+                <li id="menuButtonAvventure"><a href="#" class="submenu">AVVENTURE</a>
+                    <ul id="menuAvventure" style="display:none;">
+                        <li>ciao</li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" class="current active submenu">GALLERY</a></li>
             </ul>
         </nav>
     </header>
@@ -58,10 +60,6 @@
     <section id="titolo">
         <div class="container">
             <h1><span><a title="descrizione di Paolo" class="color_p">Un</a></span> <span><a title="descrizione di Eddy" class="color_e">gruppo</a></span> <span><a title="descrizione di Fada" class="color_f">veramente</a></span> <span><a title="descrizione di Gio" class="color_g">strano</a></span> <span><a title="descrizione di Mario" class="color_m">e</a></span> <span><a title="descrizione di Vio" class="color_v">diverso</a></span> <span><a title="descrizione di Bono" class="color_b">dagli</a></span> <span><a title="descrizione di Simo" class="color_s">altri</a></span></h1>
-            <!-- al momento lo trascuriamo però potrebbe tornare utile -->
-            <!-- <sub>
-                <span id="hide1">I colori del titolo non sono scelti a caso...</span> <span id="hide2">&rarr;</span> <span id="hide3">&rarr;</span> <span id="hide4">&rarr;</span> <span id="hide5">&rarr;</span> <span id="hide6">Se fossi in te proverei a cliccarli se vuoi sapere chi siamo veramente.</span>
-            </sub> -->
         </div>
     </section>
 
@@ -97,15 +95,29 @@
     
     <!-- Script -->
     <script>
-        window.addEventListener ("scroll",function(){
-        if (window.pageYOffset>300) {
-        document.getElementById ("tornasu").style.display= "block";
-        }
-        else if (window.pageYOffset<300) {
-        document.getElementById ("tornasu").style.display= "none";
-        }
-        val[0].innerHTML= "PageYOffset = "+window.pageYOffset
+        window.addEventListener ("scroll",function() {
+            if (window.pageYOffset>300) {
+                document.getElementById ("tornasu").style.display= "block";
+            }
+            else if (window.pageYOffset<300) {
+                document.getElementById ("tornasu").style.display= "none";
+            }
+            val[0].innerHTML= "PageYOffset = "+window.pageYOffset
         },!1);
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menuButtonChisiamo").click(function() {
+                $("#menuChisiamo").slideToggle();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#menuButtonAvventure").click(function() {
+                $("#menuAvventure").slideToggle();
+            });
+        });
     </script>
 </body>
 </html>

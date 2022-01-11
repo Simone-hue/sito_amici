@@ -40,18 +40,16 @@
         <label class="menuicon" for="hamburger">
             <span></span>
         </label>
-
         <div id="bar"> 
             <div id="logo">
                 <h1><a href="home.html">L FUSA</a></h1>
             </div>   
         </div> 
-        
         <nav class="menu-visibility">
             <ul>
                 <li class="current"><a href="home.html">HOME</a></li>
-                <li><a href="chi_siamo.html" class="submenu">CHI SIAMO</a>
-                    <ul>
+                <li id="menuButtonChisiamo"><a href="#" class="submenu">CHI SIAMO</a>
+                    <ul id="menuChisiamo" style="display:none;">
                         <li><a href="chi_siamo.html#paolo" title="descrizione di Paolo" class="color_p  a_secondary"> Paolo</a></li>
                         <li><a href="chi_siamo.html#eddy" title="descrizione di Eddy" class="color_e  a_secondary"> Eddy</a></li>
                         <li><a href="chi_siamo.html#fada" title="descrizione di Fada" class="color_f  a_secondary"> Fada</a></li>
@@ -62,8 +60,12 @@
                         <li><a href="chi_siamo.html#simo" title="descrizione di Simo" class="color_s  a_secondary"> Simone</a></li>
                     </ul>
                 </li>
-                <li><a href="working_progress.html" class="current active submenu">AVVENTURE</a></li>
-                <li><a href="gallery.html" class="submenu">GALLERY</a></li>
+                <li id="menuButtonAvventure"><a href="#" class="submenu">AVVENTURE</a>
+                    <ul id="menuAvventure" style="display:none;">
+                        <li>ciao</li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html" class="current active submenu">GALLERY</a></li>
             </ul>
         </nav>
     </header>
@@ -72,5 +74,43 @@
         <h1>WORK IN PROGRESS</h1>
         <p><b>aiutaci... non avevamo idee</b></p>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menuButtonChisiamo").click(function() {
+                $("#menuChisiamo").slideToggle();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#menuButtonAvventure").click(function() {
+                $("#menuAvventure").slideToggle();
+            });
+        });
+    </script>
+
+    <!-- utilizzo questa pagina per mettere le cose che avevo creato o che cambio ma mantengo le originali e tutto quello che non uso ma potrebbe tornare utile in futuro -->
+
+    <!-- navabar -->
+    <!-- <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1 id="logo"><a href="home.html"L FUSA</a></h1>
+                <ul>
+                    <li class="current"><a href="home.html" class="current">HOME</a></li>
+                    <li><a href="chi_siamo.html">CHI SIAMO</a>
+                    <li><a href="working_progress.html">AVVENTURE</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+    
+    <!-- home -->
+    <!-- <sub>
+        <span id="hide1">I colori del titolo non sono scelti a caso...</span> <span id="hide2">&rarr;</span> <span id="hide3">&rarr;</span> <span id="hide4">&rarr;</span> <span id="hide5">&rarr;</span> <span id="hide6">Se fossi in te proverei a cliccarli se vuoi sapere chi siamo veramente.</span>
+    </sub> -->
+    
 </body>
 </html>
