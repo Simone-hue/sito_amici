@@ -16,13 +16,13 @@
     <a name="inizio"></a>
     <a href="#inizio">
         <div id="tornasu">
-            <img src= "img/arrow-up.png" title="freccia su" class="tornasu" width="40px" height="40px">
+            <img src= "img/arrow-up.png" title="freccia su" width="40px" height="40px">
         </div>
     </a>
 
     <!-- Navbar -->
     <header>
-        <input type="checkbox" id="hamburger"/>
+        <input type="checkbox" id="hamburger">
         <label class="menuicon" for="hamburger">
             <span></span>
         </label>
@@ -33,7 +33,7 @@
         </div> 
         <nav class="menu-visibility">
             <ul>
-                <li class="current"><a href="home.html">HOME</a></li>
+                <li class="current"><a class="current active home_menu" href="home.html">HOME</a></li>
                 <li id="menuButtonChisiamo"><a href="#" class="submenu">CHI SIAMO</a>
                     <ul id="menuChisiamo" style="display:none;">
                         <li><a href="chi_siamo.html#paolo" title="descrizione di Paolo" class="color_p  a_secondary"> Paolo</a></li>
@@ -46,12 +46,16 @@
                         <li><a href="chi_siamo.html#simo" title="descrizione di Simo" class="color_s  a_secondary"> Simone</a></li>
                     </ul>
                 </li>
-                <li id="menuButtonAvventure"><a href="#" class="submenu">AVVENTURE</a>
+                <li id="menuButtonAvventure"><a href="working_progress.html" class="submenu">AVVENTURE</a>
                     <ul id="menuAvventure" style="display:none;">
-                        <li>ciao</li>
+                        <li><a href="#festa1">Estate 1</a></li>
+                        <li><a href="#festa2">Estate 2</a></li>
+                        <li><a href="#festa3">Hallowen</a></li>
+                        <li><a href="#festa4">Immacolata</a></li>
+                        <li><a href="#festa5">Capodanno</a></li>
                     </ul>
                 </li>
-                <li><a href="gallery.html" class="current active submenu">GALLERY</a></li>
+                <li><a href="gallery.html" class="submenu">GALLERY</a></li>
             </ul>
         </nav>
     </header>
@@ -59,7 +63,7 @@
     <!-- Section 1 -->
     <section id="titolo">
         <div class="container">
-            <h1><span><a title="descrizione di Paolo" class="color_p">Un</a></span> <span><a title="descrizione di Eddy" class="color_e">gruppo</a></span> <span><a title="descrizione di Fada" class="color_f">veramente</a></span> <span><a title="descrizione di Gio" class="color_g">strano</a></span> <span><a title="descrizione di Mario" class="color_m">e</a></span> <span><a title="descrizione di Vio" class="color_v">diverso</a></span> <span><a title="descrizione di Bono" class="color_b">dagli</a></span> <span><a title="descrizione di Simo" class="color_s">altri</a></span></h1>
+            <h1><span class="color_p">Un </span><span class="color_e">gruppo </span><span class="color_f">veramente </span><span class="color_g">strano </span><span class="color_m">e </span><span class="color_v">diverso </span><span class="color_b">dagli </span><span class="color_s">altri</span></h1>
         </div>
     </section>
 
@@ -97,22 +101,24 @@
     <script>
         window.addEventListener ("scroll",function() {
             if (window.pageYOffset>300) {
-                document.getElementById ("tornasu").style.display= "block";
+                document.getElementById("tornasu").style.display= "block";
             }
             else if (window.pageYOffset<300) {
-                document.getElementById ("tornasu").style.display= "none";
+                document.getElementById("tornasu").style.display= "none";
             }
             val[0].innerHTML= "PageYOffset = "+window.pageYOffset
         },!1);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
+        // // Menù scorrimento basso Chi siamo
         $(document).ready(function() {
             $("#menuButtonChisiamo").click(function() {
                 $("#menuChisiamo").slideToggle();
             });
         });
 
+        // Menù scorrimento basso 
         $(document).ready(function() {
             $("#menuButtonAvventure").click(function() {
                 $("#menuAvventure").slideToggle();

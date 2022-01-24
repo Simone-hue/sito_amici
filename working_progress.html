@@ -9,21 +9,6 @@
     <link rel="stylesheet" media="screen and (max-width:500px)" href="css/mobile.css">
     <link rel="stylesheet" href="css/menu_tendina.css"> <!-- css per menù a tendina -->
     <title>L Fusa | Work in Progress</title>
-    <style>
-        div#verticale {
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-top: -100px;
-        margin-left: -100px;
-        }
-        h1, p {
-            text-align: center;
-            color: #fff;
-        }
-    </style>
 </head>
 <body>
     <!-- Torna su -->
@@ -47,7 +32,7 @@
         </div> 
         <nav class="menu-visibility">
             <ul>
-                <li class="current"><a href="home.html">HOME</a></li>
+                <li class="current"><a class="home_menu" href="home.html">HOME</a></li>
                 <li id="menuButtonChisiamo"><a href="#" class="submenu">CHI SIAMO</a>
                     <ul id="menuChisiamo" style="display:none;">
                         <li><a href="chi_siamo.html#paolo" title="descrizione di Paolo" class="color_p  a_secondary"> Paolo</a></li>
@@ -60,12 +45,9 @@
                         <li><a href="chi_siamo.html#simo" title="descrizione di Simo" class="color_s  a_secondary"> Simone</a></li>
                     </ul>
                 </li>
-                <li id="menuButtonAvventure"><a href="#" class="submenu">AVVENTURE</a>
-                    <ul id="menuAvventure" style="display:none;">
-                        <li>ciao</li>
-                    </ul>
+                <li id="menuButtonAvventure"><a href="working_progress.html" class="current active submenu">AVVENTURE</a>
                 </li>
-                <li><a href="gallery.html" class="current active submenu">GALLERY</a></li>
+                <li><a href="gallery.html" class="submenu">GALLERY</a></li>
             </ul>
         </nav>
     </header>

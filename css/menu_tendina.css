@@ -29,17 +29,17 @@ ul li {
 
 .active-dropdown {
     color: #FFFFFF;
-    background-color: #000; /* primary lightcolor*/
+    background-color: #000;
 }
 
 nav {
     height: 100%;
-    background-color: #52628b; /* primary lightcolor* /* sfondo menu mobile*/
+    background-color: #52628b;
     position: fixed;
     width: 100%;
     margin-top: 54px;
     visibility: hidden;
-    overflow: auto; /* permette lo scroll quando il menu è aperto*/
+    overflow: auto;
 }
 
 nav ul {
@@ -48,7 +48,7 @@ nav ul {
 
 nav ul li a {
     text-transform: uppercase;
-    color: 000;
+    color: #000;
     background: transparent;
     /* text-shadow: -4px 4px rgba(179,179,179,.4), -3px 3px rgba(153,153,153,.2), -2px 2px rgba(179,179,179,.2), -1px 1px rgba(179,179,179,.2), 0px 0px rgba(128,128,128,.5), 1px -1px rgba(77,77,77,.6), 2px -2px rgba(77,77,77,.7), 3px -3px rgba(82,82,82,.8), 4px -4px rgba(77,77,77,.9), 5px -5px rgba(77,77,77,1); */
     padding: 16px 0 16px 32px;
@@ -66,13 +66,23 @@ nav ul li a {
 }
 
 .submenu:hover {
-    color: #fff;
+    color: #ff0101;
+    background: #2F67FF;
+}
+
+.home_menu {
+    color: #000;
+    /* padding-bottom: 5px; */
+}
+
+.home_menu:hover {
+    color: #ff0101;
     background: #2F67FF;
 }
 
 .active {
     color: #FFFFFF;
-    background-color: #020086; /* primary lightcolor*/
+    background-color: #020086;
 }
 
 nav ul li ul {
@@ -91,7 +101,7 @@ nav ul li ul li a:hover {
 }
 
 .lingua {
-    border-top: 1px solid #B3453E; /* primary lightcolor*/
+    border-top: 1px solid #B3453E;
 }
 
 .lingua > a::before {
@@ -102,7 +112,7 @@ nav ul li ul li a:hover {
 /* ----------------- div bar per l'attivazione del menu ------------------ */
 
 #bar {
-    background-color: #2F67FF; /* primary color*/
+    background-color: #2F67FF;
     height: 54px;
     width: 100%;
     z-index: 2;
@@ -162,41 +172,41 @@ nav ul li ul li a:hover {
 }
 
 #hamburger:checked ~ .menuicon span {
-    background-color: rgba(0,0,0,0);
+    background-color: #00000000;
 }
     
 #hamburger:checked ~ .menuicon span::before {
-      margin-top: 0px;
-      -webkit-transition-delay: 0, .3s;
-      -moz-transition-delay: 0, .3s;
-      -ms-transition-delay: 0,.3s;
-      -o-transition-delay: 0, .3s;
+    margin-top: 0px;
+    -webkit-transition-delay: 0, .3s;
+    -moz-transition-delay: 0, .3s;
+    -ms-transition-delay: 0,.3s;
+    -o-transition-delay: 0, .3s;
       transition-delay: 0, .3s;
 }
 	
 #hamburger:checked ~ .menuicon span::after {
-      margin-top: 0px;
-      -webkit-transition-delay: 0, .3s;
-      -moz-transition-delay: 0, .3s;
-      -ms-transition-delay: 0,.3s;
-      -o-transition-delay: 0, .3s;
-      transition-delay: 0, .3s;
+    margin-top: 0px;
+    -webkit-transition-delay: 0, .3s;
+    -moz-transition-delay: 0, .3s;
+    -ms-transition-delay: 0,.3s;
+    -o-transition-delay: 0, .3s;
+    transition-delay: 0, .3s;
 }
 
 #hamburger:checked ~ .menuicon span::before {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 #hamburger:checked ~ .menuicon span::after {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 /* ----------------- menu animation faccio apparire il menu ------------------ */
@@ -210,7 +220,7 @@ nav ul li ul li a:hover {
 @media screen and (min-width: 980px){
 
     .menuicon {
-        display: none; /* togliere icona hambuger icon */
+        display: none;
     }
    
     #bar #logo {
@@ -228,18 +238,17 @@ nav ul li ul li a:hover {
         float: right;
         right: 12px;
         visibility: visible;
-        font-family: 'Roboto Slab', serif;
         overflow: inherit;
     }
 
     .active {
         background-color: transparent;
-        color: #FF6759; /* primary super-lightcolor*/
+        color: #FF6759;
     }
 
     .active-dropdown {
         color: #fff;
-        background-color: #B3453E; /* primary lightcolor*/
+        background-color: #B3453E;
     }
 
     nav ul {
@@ -271,6 +280,11 @@ nav ul li ul li a:hover {
     }
 
     .submenu {
+        padding-left: 0;
+        color: #fff;
+    }
+
+    .home_menu {
         padding-left: 0;
         color: #fff;
     }
@@ -308,7 +322,7 @@ nav ul li ul li a:hover {
     nav ul li ul li a {
     padding: 16px 32px;
     display: block;
-    background: #2F67FF; /* primary color*/
+    background: #2F67FF;
     color: #ffffff;
     font-weight: normal;
     }

@@ -30,51 +30,6 @@ a {
     clear: both;
 }
 
-/* Header */
-
-#navbar {
-    background: #2F67FF;
-}
-
-#navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#navbar .container ul {
-    display: flex;
-    padding-right: 1rem;
-}
-
-#navbar .container ul li {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#navbar .container ul li a {
-    padding: 20px;
-    display: block;
-}
-
-#navbar .container h1 {
-    text-transform: uppercase;
-    padding-left: 1.5rem;
-    color: transparent;
-    background: #2F67FF;
-    text-shadow: -4px 4px rgba(179,179,179,.4), -3px 3px rgba(153,153,153,.2), -2px 2px rgba(179,179,179,.2), -1px 1px rgba(179,179,179,.2), 0px 0px rgba(128,128,128,.5), 1px -1px rgba(77,77,77,.6), 2px -2px rgba(77,77,77,.7), 3px -3px rgba(82,82,82,.8), 4px -4px rgba(77,77,77,.9), 5px -5px rgba(77,77,77,1);
-}
-
-#navbar ul li a:hover,
-#navbar ul li:hover,
-#navbar ul li a.current,
-#navbar ul li.current {
-    background: #121212;
-    color: #ff0101;
-}
-
 /* home */
 /* titolo */
 
@@ -212,8 +167,8 @@ a {
 
 #descrizioni {
     height: 500px;
-    padding-top: 2rem;
-    background: linear-gradient(#e66465, #9198e5);
+    /* padding-top: 2rem; */
+    /* background: linear-gradient(#e66465, #9198e5); */
     /* background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
                 linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
                 linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%); */
@@ -230,10 +185,11 @@ a {
 }
 
 #descrizioni h2 {
-    color: #000000;
+    color: #654321;
     text-align: center;
     font-size: 2.5rem;
     padding: 1.5rem;
+    margin-top: 3rem;
 }
 
 #descrizioni img {
@@ -247,94 +203,49 @@ a {
     width: 80%;
 }
 
-#descrizioni .paolo {
-    background: #00ff00;
+#descrizioni .description {
     display: flex;
     flex-direction: row;
     flex: 1;
     padding: 1.5rem;
     justify-content: space-around;
     border-radius: 5px;
+}
+
+#descrizioni .paolo {
+    background: #00ff0052;
 }
 
 #descrizioni .eddy {
-    background: #a70000;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
+    background: #a71d1d;
 }
 
 #descrizioni .fada {
-    background: #ffee00;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
+    background: #c7bd34;
 }
 
 /* #descrizioni .francesco_g {
     background: #00ff00;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
 } */
 
 #descrizioni .gio {
-    background: #00ffaa;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
+    background: #00ffaaa2;
 }
 
 #descrizioni .mario {
-    background: #6cceff;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
+    background: #6cceffd2;
 }
 
 #descrizioni .vio {
     background: #800080;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
 }
 
 #descrizioni .bono {
-    background: #0000ff;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
+    background: #0000ff81;
 }
 
 #descrizioni .simo {
-    background: #ffa500;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    padding: 1.5rem;
-    justify-content: space-around;
-    border-radius: 5px;
+    background: #ffb937;
 }
 
 .link_insta:link {
@@ -362,26 +273,6 @@ a {
 #introduzione {
     font-size: 1.2rem;
     margin: 1.5rem 1.2rem;
-}
-
-#avventure .indice {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#avventure .indice menu {
-    display: flex;
-    padding-right: 2rem;
-}
-
-#avventure .indice menu li {
-    list-style: none;
-}
-
-#avventure .indice menu li a {
-    padding: 20px;
-    display: block;
 }
 
 /* gallery */
@@ -420,4 +311,21 @@ a {
     color: #fff;
     text-align: center;
     /* margin-top: 1rem; */
+}
+
+
+/* working progress */
+
+div#verticale {
+    width: 1000px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    padding-top: 300px;
+    padding-left: 300px;
+}
+
+h1, p {
+    text-align: center;
+    color: #fff;
 }
